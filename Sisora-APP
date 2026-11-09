@@ -1,0 +1,113 @@
+Shopping Application
+Brand
+Name: Sisora
+Tagline: Maternity Made Soft
+About: Refined maternity & celebration boutique — bump-friendly cotton, luminous jewelry, soft co-ords
+Payment: UPI vijayalakshmik1012000@okicici (Vijayalakshmi Kumar)
+Hero
+Headline: Maternity made soft, luminous, and ready for every celebration.
+Support: Bump-friendly cotton, hand-finished jewelry, and co-ords that feel as gentle as they look—styled for the season of becoming.
+CTAs: Shop the edit · Browse collections
+Collections
+Collection	Copy
+Maternity
+Flexible peplums and soft cotton staples.
+Jewelry
+Temple shine, light enough for all day.
+Co-ords
+Matched sets with room to grow.
+Sarees
+Quiet celebration drapes for rituals.
+Section title: Soft edits for every chapter
+
+Shop
+Title: The Sisora edit
+Filters: All · Maternity · Jewelry · Co-ords · Sarees
+
+Products (starter catalog)
+Product	Category	Price	Notes
+Meera Soft Peplum
+Maternity
+₹749 (₹899)
+Bestseller
+Nila Temple Necklace
+Jewelry
+₹899 (₹1099)
+15% OFF
+Avani Cotton Three-Piece
+Co-ords
+₹1499 (₹1799)
+New
+Kayal Anarkali Set
+Maternity
+₹1699
+Preorder
+Mullai Pearl Jhumka
+Jewelry
+₹649 (₹799)
+Trending
+Sridevi Elephant Co-ord
+Co-ords
+₹1299 (₹1499)
+Kerala Stripe Saree
+Sarees
+₹1399 (₹1649)
+Limited
+Palakka Green Bangles
+Jewelry
+₹599 (₹699)
+Hridya Everyday Dress
+Maternity
+₹749 (₹849)
+Attigai Classic Set
+Jewelry
+₹799 (₹949)
+Sold out
+Myra Soft Cotton Set
+Co-ords
+₹1199 (₹1399)
+15% OFF
+Amritha Luxe Lounge
+Maternity
+₹899 (₹1049)
+Editor pick
+Our Promise
+Softness you can feel. Style you can keep.
+Bump-friendly ease
+Celebration-ready shine
+Honest shopping notes
+Footer
+Maternity made soft—cotton peplums, luminous jewelry, and co-ords for the season of becoming.
+
+You can change any product/price/image anytime in Owner → Products.
+
+
+Layer	    Tech 
+Language  TypeScript
+UI         React 19
+Framework  Next.js 16 (App Router)
+Styling    Tailwind CSS 4 + shadcn/ui (Base UI)
+Icons      lucide-react
+Database   PostgreSQL via pg (in-memory fallback locally)
+Auth       Custom email/password + HTTP-only session cookie
+Payments
+UPI QR (upi://pay link)
+App structure (where code lives)
+
+sisora/
+  src/app/           → pages + API routes
+  src/components/    → UI (hero, shop, cart, owner panel…)
+  src/lib/           → products, auth, orders, UPI, DB
+  migrations/        → SQL tables
+  public/            → static files (e.g. upi-qr.png)
+Key APIs
+/api/auth/* — register, login, logout, me
+/api/products — shop catalog
+/api/orders — place/view orders + UPI QR
+/api/admin/* — owner products, orders, UPI settings
+Run
+
+cd sisora
+npm install
+npm run dev
+Open http://localhost:3847
